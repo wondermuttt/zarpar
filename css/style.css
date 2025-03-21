@@ -1,0 +1,324 @@
+/* Basic reset and typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  a {
+    color: #5B707B; /* brand color (blue-gray from logo) */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .navbar .logo img {
+    max-height: 40px;
+  }
+  .navbar .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .navbar .nav-menu li {
+    position: relative;
+  }
+  .navbar .nav-menu a {
+    color: #333;
+    padding: 8px 0;
+    font-weight: 500;
+  }
+  .navbar .nav-menu a.active {
+    border-bottom: 2px solid #5B707B;
+  }
+  .navbar .dropdown > span {
+    color: #333;
+    padding: 8px 0;
+    font-weight: 500;
+    cursor: default;
+  }
+  .navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .navbar .dropdown-menu li {
+    width: 100%;
+  }
+  .navbar .dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    white-space: nowrap;
+    color: #333;
+  }
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  /* Hamburger (mobile menu button) */
+  .navbar .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar .hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    position: relative;
+  }
+  .navbar .hamburger::before,
+  .navbar .hamburger::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: #333;
+    position: absolute;
+    left: 0;
+  }
+  .navbar .hamburger::before {
+    top: -8px;
+  }
+  .navbar .hamburger::after {
+    bottom: -8px;
+  }
+  
+  /* Hero sections */
+  .hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);  /* dark overlay for text contrast */
+  }
+  .hero h1 {
+    position: relative;
+    font-size: 2.5em;
+    line-height: 1.2;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom: 0.5em;
+  }
+  .hero p {
+    position: relative;
+    font-size: 1.2em;
+  }
+  .hero-home {
+    background-image: url("../images/hero.jpg");
+  }
+  .hero-finance {
+    background-image: url("../images/finance.jpg");
+  }
+  .hero-medical {
+    background-image: url("../images/medical.jpg");
+  }
+  .hero-legal {
+    background-image: url("../images/legal.jpg");
+  }
+  
+  /* Homepage Services Highlights */
+  .home-services {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .home-services h2 {
+    margin-bottom: 40px;
+  }
+  .service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: left;
+  }
+  .service-item h3 {
+    color: #5B707B;
+    margin-bottom: 0.5em;
+  }
+  .service-item p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
+  /* Call-to-Action section */
+  .cta {
+    background: #5B707B;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .cta h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  .cta p {
+    font-size: 1.1em;
+  }
+  .cta .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .cta .button:hover {
+    background: #fff;
+    color: #5B707B;
+  }
+  
+  /* Main content area (for all pages) */
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  main h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  main h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0.5em;
+    color: #5B707B;
+  }
+  main p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    max-width: 600px;
+    margin: 20px 0;
+  }
+  .contact-form .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .contact-form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .contact-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+  .contact-form button {
+    background: #5B707B;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .contact-form button:hover {
+    background: #4a5d66;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .nav-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+    .navbar .nav-menu li {
+      margin: 5px 0;
+    }
+    .navbar.open .nav-menu {
+      display: flex;
+    }
+    .navbar.open .dropdown-menu {
+      display: block;
+      position: static;
+      border: none;
+      box-shadow: none;
+    }
+    .navbar.open .dropdown-menu a {
+      padding-left: 20px;
+    }
+    .navbar .nav-toggle {
+      display: block;
+    }
+    .hero {
+      padding: 80px 15px;
+    }
+    .hero h1 {
+      font-size: 2em;
+    }
+    .service-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
