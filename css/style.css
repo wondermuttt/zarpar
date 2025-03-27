@@ -41,7 +41,7 @@
     padding: 10px 20px;
   }
   .navbar .logo img {
-    max-height: 40px;
+    max-height: 80px;
   }
   .navbar .nav-menu {
     display: flex;
