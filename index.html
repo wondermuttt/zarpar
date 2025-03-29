@@ -1,68 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zarpar Consulting - Home</title>
-  <meta name="description" content="Zarpar Consulting is a leading consulting firm offering expertise in Cloud Computing, AI/ML, and Enterprise Architecture." />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARPAR - Innovative Technology Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="index.html" class="logo"><img src="images/Zarpar-logo-wide.png" alt="Zarpar Consulting Logo" /></a>
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li class="dropdown">
-        <span>Industry Solutions</span>
-        <ul class="dropdown-menu">
-          <li><a href="industry-finance.html">Finance</a></li>
-          <li><a href="industry-medical.html">Medical</a></li>
-          <li><a href="industry-legal.html">Legal</a></li>
-        </ul>
-      </li>
-      <li id="nav-case"><a href="case-studies.html">Case Studies</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <!-- Hamburger icon for mobile menu -->
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero hero-home">
-    <h1>Empowering Your Business with Innovative Technology Solutions</h1>
-    <p>Driving success through Cloud, AI, and Enterprise Architecture excellence.</p>
-  </section>
-
-  <!-- Overview of Services on Homepage -->
-  <section class="home-services">
-    <h2>Our Expertise</h2>
-    <div class="service-grid">
-      <div class="service-item">
-        <h3>Cloud Computing</h3>
-        <p>Leverage scalable cloud infrastructure and strategy to modernize and secure your enterprise IT.</p>
-      </div>
-      <div class="service-item">
-        <h3>Artificial Intelligence & ML</h3>
-        <p>Implement cutting-edge AI/ML solutions to unlock insights, automation, and competitive advantage.</p>
-      </div>
-      <div class="service-item">
-        <h3>Enterprise Architecture</h3>
-        <p>Align technology and business goals with robust architecture and roadmap planning.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call-to-Action Section -->
-  <section class="cta">
-    <h2>Ready to transform your business?</h2>
-    <p><a href="contact.html" class="button">Contact Us</a> to discuss how we can help.</p>
-  </section>
-
-  <script src="js/script.js"></script>
+    <header>
+        <div class="logo-container">
+            <img src="zarpar-logo.png" alt="ZARPAR Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#cloud-computing">Cloud Computing</a></li>
+                <li><a href="#ai-ml">Artificial Intelligence & ML</a></li>
+                <li><a href="#enterprise-architecture">Enterprise Architecture</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Empowering Your Business with Innovative Technology Solutions</h1>
+            <p>Driving success through Cloud, AI, and Enterprise Architecture excellence.</p>
+        </section>
+        <section class="services">
+            <h2>Our Expertise</h2>
+            <div class="service-item" id="cloud-computing">
+                <h3>Cloud Computing</h3>
+                <p>Leverage scalable cloud infrastructure and strategy to modernize and secure your enterprise IT.</p>
+            </div>
+            <div class="service-item" id="ai-ml">
+                <h3>Artificial Intelligence & ML</h3>
+                <p>Implement cutting-edge AI/ML solutions to unlock insights, automation, and competitive advantage.</p>
+            </div>
+            <div class="service-item" id="enterprise-architecture">
+                <h3>Enterprise Architecture</h3>
+                <p>Align technology and business goals with robust architecture and roadmap planning.</p>
+            </div>
+        </section>
+        <section class="cta" id="contact-us">
+            <h2>Ready to transform your business?</h2>
+            <p>Contact Us to discuss how we can help.</p>
+            <a href="#contact-us" class="cta-button">Get in Touch</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ZARPAR. All rights reserved.</p>
+    </footer>
 </body>
 </html>
